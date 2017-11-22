@@ -1,0 +1,103 @@
+include header.pug
+
+body(name='service', page='hotel')
+  section(id='service-top')
+    .content-container
+      include top.pug
+      .wrapper.row.no-gutters
+        .col-lg-6
+          .catch-praise
+            | 호텔과 게스트하우스 운영을 위한
+            br
+            | 예약관리 프로그램
+          .store-btns
+            a(href='#')
+              img(src='/images/store-google.png')
+            a(href='#')
+              img(src='/images/store-apple.png')
+        .col-lg-6
+          img.img-fluid(src='/images/mockup-hoppy.png')
+  section(class='tab-menu')
+    a.hotel(href='/service/hotel-pms') 호텔,게스트하우스 예약관리 프로그램
+    a.pension(href='/service/pension-pms') 펜션예약관리 프로그램
+    a.b2b(href='/service/b2b') B2B 플랫폼
+  section(id='service-hotel-pms')
+    .content-container
+      h2 예약관리 프로그램
+      img.img-fluid.pb-5(src='/images/service01.png')
+      .row.mt-4
+        .col-lg-3
+          h3 쉽고 편리한 예약관리
+          p 더이상 복잡한 장부를 들여다 보실 필요 없습니다. 이제 고객응대만 집중하세요.
+        .col-lg-3
+          h3 매출과 운영지표를 한눈에
+          p ONDA에 입력하신 정보들을 자동 분석하여 꼭 필요한 맞춤 리포트를 제공합니다.
+        .col-lg-3
+          h3 카드결제 OK
+          p 카드번호와 유효기간 입력만으로 고객들로부터 결제를 받으세요. 합리적인 수수료로 파트너분들의 업무를 지원합니다.
+        .col-lg-3
+          h3 모바일에서도 OK
+          p 예약관리에 꼭 필요한 기능을 모바일 App에 모두 담았습니다. 언제 어디서든 예약을 관리하세요.
+  section.bg-light(id='service-hotel-bp')
+    .content-container
+      h2 실시간 예약창
+      .row
+        .col-lg-5
+          img.img-fluid.pb-5(src='/images/service02.png')
+        .col-lg-7.pt-2
+          h3 모든 곳에 연동되는 실시간 예약창
+          p 
+            | 웹사이트, 페이스북, 인스타그램, 블로그, 카카오톡 등 고객과의 모든 접점에서 예약을 받으세요. 
+            br
+            | 온다의 실시간 예약창은 언제 어디서든 사용할 수 있습니다.
+          .py-2
+          h3 간편하고 빠른 결제 서비스
+          p 
+            | 복잡한 플러그인이나 ActiveX를 설치 할 필요가 없습니다.
+            br
+            | 고객의 예약을 더 많이 받기 위한 최적의 결제시스템을 제공합니다.
+  section(id='service-hotel-cms')
+    .content-container
+      h2 채널매니저
+      .row        
+        .col-lg-7.pt-2
+          h3 모든 곳에 연동되는 실시간 예약창
+          p 
+            | 웹사이트, 페이스북, 인스타그램, 블로그, 카카오톡 등 고객과의 모든 접점에서 예약을 받으세요. 
+            br
+            | 온다의 실시간 예약창은 언제 어디서든 사용할 수 있습니다.
+          .py-2
+          h3 간편하고 빠른 결제 서비스
+          p 
+            | 복잡한 플러그인이나 ActiveX를 설치 할 필요가 없습니다.
+            br
+            | 고객의 예약을 더 많이 받기 위한 최적의 결제시스템을 제공합니다.
+        .col-lg-5
+          img.img-fluid.pb-5(src='/images/service03.png')
+  section.bg-light(id='service-hotel-gds')
+    .content-container
+      h2 온다 판매대행
+      .row        
+        .col
+          h3 온다 판매대행
+          p 
+            | 온다와 강력한 파트너십이 맺어진 국내외 수 많은 채널에서 상품을 판매해보세요. 단 한번의 계약만으로 여러 사이트에서 상품을 동시 판매할 수 있습니다.
+            br
+            | ※ 수수료 계약 필요
+        .col
+          h3 주 단위 정산
+          p 
+            | 정산을 위해 복잡한 송장 발행이나, 수수료 입금절차가 필요없습니다.
+            br
+            | 투숙완료 시점을 기준으로 익주 금요일에 정산이 완료됩니다.
+      img.img-fluid.mt-5(src='/images/service04.png')
+      .py-5
+      .text-center
+        a.btn.btn-lg.btn-primary(href='#') 
+          | 예약관리 프로그램 시작하기
+          span.text-thin  (무료)
+
+include footer.pug
+
+
+

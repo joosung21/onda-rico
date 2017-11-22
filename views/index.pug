@@ -1,26 +1,175 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title #{title}
+include header.pug
 
-    //- scripts
-    script(src='https://code.jquery.com/jquery-3.2.1.min.js')    
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
-    
-    //- styles
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')    
-    link(rel='stylesheet', href='/css/onda.css')
+body
+  section(id='main-slider')
+    .content-container
+      include top.pug
+      .title
+        hr.bold
+        | 숙소 운영
+        hr
+        | 최적의 예약관리 프로그램
+        hr
+        img(src='/images/logo2.png')
+        hr
+        .lead 종이장부, 엑셀, 구글시트는 이제 안녕, 숙박업에 찾아온 최적의 예약관리 파트너 '온다'
+section
+  .content-container
+    .row.display-description
+      .col-lg-2.title
+        | ONDA PROGRAM        
+      .col-lg-10.content
+        p 
+          | 예약관리장부, 고객관리, 판매대행사 더블부킹 방지를 위해 소비하던 사장님들의 소중한 시간을 이제 '온다'가 돌려 드립니다
+          br
+          | 종이장부, 엑셀, 구글시트보다 훨씬~ 편리하게 예약을 관리해보세요.
+        a.short-cut(href='#')
+          | 호텔, 계스트하우스
+          img(src='/images/plus.svg')
+        a.short-cut(href='#')
+          | 펜션
+          img(src='/images/plus.svg')
+section(id='catch-praise')
+  .content-container
+    .row
+      .col-lg-10.offset-lg-2
+        | 누구나 쉽게 사용하는
+        br
+        | 똑똑한 예약관리프로그램
+section(id='diagram')
+  .content-container
+    img.img-fluid(src='/images/diagram.png')
+section(id='reviews')
+  .content-container
+    .row
+      .col-lg-10.offset-lg-2
+        .media
+          img.rounded-circle.mr-3(src='/images/temp-review01.jpg')
+          .media-body
+            | 혼자서 시장조사도 하고 마케팅 공부도 하며 여러가지 시도를 해 보았지만 쉽지 않았습니다.
+            br
+            | 그런데 ONDA에서 알아서 예약을 많이 받아주어 감동적이었습니다.
+            br
+            | 까사명동 게스트하우스 - 김현성 파트너님
+        .media
+          img.rounded-circle.mr-3(src='/images/temp-review02.jpg')
+          .media-body
+            | 5분이면 손쉽게 배울 수 있고 누구든지 바로 사용 할 수 있는 점이 매력적이었어요
+            br
+            | ONDA는 정말 숙박업소 사장님들에게 베스트 프렌드 같아요
+            br
+            | 까사명동 게스트하우스 - 김현성 파트너님
+        .media
+          img.rounded-circle.mr-3(src='/images/temp-review02.jpg')
+          .media-body
+            | 5분이면 손쉽게 배울 수 있고 누구든지 바로 사용 할 수 있는 점이 매력적이었어요
+            br
+            | ONDA는 정말 숙박업소 사장님들에게 베스트 프렌드 같아요
+            br
+            | 까사명동 게스트하우스 - 김현성 파트너님
+section(id='partners')
+  .content-container
+    img.img-fluid(src='/images/partners.png')
+section(id='magazine')
+  .content-container
+    .row.display-description.light
+      .col-lg-2.title
+        | ONDA MAGAZINE
+      .col-lg-10.content
+        p 
+          | 숙박 사장님 인터뷰,  숙박운영 노하우 그리고
+          br
+          | 숙박 베테랑들이 전하는 온다의 이야기 등 재밌있고 유익한 소식을 만나보세요.
+        a.short-cut(href='#')
+          | 매거진 온 정기구독
+          img(src='/images/plus.svg')        
+    .row.magazine-slider
+      .col-lg-10.offset-lg-2(style='padding-left: 2.5rem')            
+        #carouselMagazineIndicators.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselMagazineIndicators', data-slide-to='0')
+            li(data-target='#carouselMagazineIndicators', data-slide-to='1')
+            li(data-target='#carouselMagazineIndicators', data-slide-to='2')
+          .carousel-inner
+            .carousel-item.active
+              .d-flex.justify-content-between
+                a.a-magazine(href='http://www.srook.net/magazinezari/636459050280063471', target='_blank')
+                  img(src='/images/magazine_2017_11.jpg')
+                  .caption MAGAZINE ON 2017년 11월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636434861462081605', target='_blank')
+                  img(src='/images/magazine_2017_10.jpg')
+                  .caption MAGAZINE ON 2017년 10월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636404618902606870', target='_blank')
+                  img(src='/images/magazine_2017_09.jpg')
+                  .caption MAGAZINE ON 2017년 9월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636380425691960124', target='_blank')
+                  img(src='/images/magazine_2017_08.jpg')
+                  .caption MAGAZINE ON 2017년 8월호
+                
+            .carousel-item
+              .d-flex.justify-content-between
+                a.a-magazine(href='http://www.srook.net/magazinezari/636355566791594568', target='_blank')
+                  img(src='/images/magazine_2017_07.jpg')
+                  .caption MAGAZINE ON 2017년 7월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636325148646583332', target='_blank')
+                  img(src='/images/magazine_2017_06.jpg')
+                  .caption MAGAZINE ON 2017년 6월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636301815104263687', target='_blank')
+                  img(src='/images/magazine_2017_05.jpg')
+                  .caption MAGAZINE ON 2017년 5월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636277634072226927', target='_blank')
+                  img(src='/images/magazine_2017_04.jpg')
+                  .caption MAGAZINE ON 2017년 4월호
 
-  //- Start BODY
-  body
-    section(id='main-slider')
-      .container
-        #top
-          .d-flex
-            a.logo(href='#')
-              img(src='/images/logo.png')
-            
+            .carousel-item
+              .d-flex.justify-content-between                  
+                a.a-magazine(href='http://www.srook.net/magazinezari/636247394334838387', target='_blank')
+                  img(src='/images/magazine_2017_03.jpg')
+                  .caption MAGAZINE ON 2017년 3월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636223190607624027', target='_blank')
+                  img(src='/images/magazine_2017_02.jpg')
+                  .caption MAGAZINE ON 2017년 2월호
+                a.a-magazine(href='http://www.srook.net/magazinezari/636198394880850323', target='_blank')
+                  img(src='/images/magazine_2017_01.jpg')
+                  .caption MAGAZINE ON 2017년 1월호
+                .empty
+
+          a.carousel-control-prev(href='#carouselMagazineIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true', style='background:none;')
+              img(src='/images/left-arrow.png')       
+          a.carousel-control-next(href='#carouselMagazineIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true', style='background:none;')
+              img(src='/images/right-arrow.png')
+section(id='numbers')
+  .content-container
+    .title.text-center 숙박산업의 바른내일을 제시합니다.
+    .row
+      .col-lg-11.mx-auto
+        .items.d-flex.justify-content-between
+          .item
+            .display
+              img(src='/images/numbers-icon02.png')
+              .the-number 15
+            .desc 개 국가에서
+          .item
+            .display
+              img(src='/images/numbers-icon01.png')
+              .the-number 5,232
+            .desc 명 파트너가
+          .item
+            .display
+              img(src='/images/numbers-icon03.png')
+              .the-number 79,041
+            .desc 개 객실을
+          .item
+            .display
+              img(src='/images/numbers-icon04.png')
+              .the-number 8,695,041
+            .desc 건 거래하고 있습니다.
+    .store-btns.text-center
+      a(href='#')
+        img(src='/images/store-google.png')
+      a(href='#')
+        img(src='/images/store-apple.png')
+  
+include footer.pug
