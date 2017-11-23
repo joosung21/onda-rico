@@ -1,0 +1,18 @@
+include header.pug
+
+body(name='service', page='b2b')
+  section(id='service-b2b-top')
+    .content-container
+      include top.pug
+      .wrapper.row.no-gutters
+        .col-lg-6
+          .catch-praise
+            | b2b
+            br
+            | Under Construction
+        .col-lg-6
+          
+  section(class='tab-menu')
+    a.hotel(href='/service/hotel') 호텔,게스트하우스 예약관리 프로그램
+    a.pension(href='/service/pension') 펜션예약관리 프로그램
+    a.b2b(href='/service/b2b') B2B 플랫폼

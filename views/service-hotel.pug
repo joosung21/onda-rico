@@ -1,7 +1,7 @@
 include header.pug
 
 body(name='service', page='hotel')
-  section(id='service-top')
+  section(id='service-hotel-top')
     .content-container
       include top.pug
       .wrapper.row.no-gutters
@@ -18,8 +18,8 @@ body(name='service', page='hotel')
         .col-lg-6
           img.img-fluid(src='/images/mockup-hoppy.png')
   section(class='tab-menu')
-    a.hotel(href='/service/hotel-pms') 호텔,게스트하우스 예약관리 프로그램
-    a.pension(href='/service/pension-pms') 펜션예약관리 프로그램
+    a.hotel(href='/service/hotel') 호텔,게스트하우스 예약관리 프로그램
+    a.pension(href='/service/pension') 펜션예약관리 프로그램
     a.b2b(href='/service/b2b') B2B 플랫폼
   section(id='service-hotel-pms')
     .content-container
@@ -44,7 +44,7 @@ body(name='service', page='hotel')
       .row
         .col-lg-5
           img.img-fluid.pb-5(src='/images/service02.png')
-        .col-lg-7.pt-2
+        .col-lg-7.pt-4
           h3 모든 곳에 연동되는 실시간 예약창
           p 
             | 웹사이트, 페이스북, 인스타그램, 블로그, 카카오톡 등 고객과의 모든 접점에서 예약을 받으세요. 
@@ -58,9 +58,9 @@ body(name='service', page='hotel')
             | 고객의 예약을 더 많이 받기 위한 최적의 결제시스템을 제공합니다.
   section(id='service-hotel-cms')
     .content-container
-      h2 채널매니저
+      h2.mb-3 채널매니저
       .row        
-        .col-lg-7.pt-2
+        .col-lg-7.pt-5
           h3 모든 곳에 연동되는 실시간 예약창
           p 
             | 웹사이트, 페이스북, 인스타그램, 블로그, 카카오톡 등 고객과의 모든 접점에서 예약을 받으세요. 

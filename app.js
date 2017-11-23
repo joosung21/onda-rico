@@ -14,9 +14,17 @@ app.get('/', function (req, res){
 })
 
 // 서비스
-app.get('/service/hotel-pms', function (req, res){
+app.get('/service/hotel', function (req, res){
   title = 'ONDA - 서비스'
   res.render('service-hotel')
+})
+app.get('/service/pension', function (req, res){
+  title = 'ONDA - 서비스'
+  res.render('service-pension')
+})
+app.get('/service/b2b', function (req, res){
+  title = 'ONDA - 서비스'
+  res.render('service-b2b')
 })
 
 
