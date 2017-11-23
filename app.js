@@ -27,6 +27,12 @@ app.get('/service/b2b', function (req, res){
   res.render('service-b2b')
 })
 
+// 메거진
+app.get('/magazine', function (req, res){
+  title = 'ONDA - 메거진 온'
+  res.render('magazine')
+})
+
 
 
 

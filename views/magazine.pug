@@ -1,0 +1,137 @@
+include header.pug
+
+body(name='magazine', page='all')
+  section(id='sub-top')
+    .content-container
+      include top.pug
+  section(id='magazine-top')
+    .catch-praise 숙박업소의 모든 것, 매거진 온
+    a.btn.btn-lg.btn-primary(href='#')
+      img(src='/images/icon-magazine.svg', style='margin-top: -.3rem; padding-right: 1rem')
+      | 정기구독 신청하기
+  section(class='tab-menu')
+    a.all(href='/magazine/all')
+      | 전체
+      span.count 801
+    a.interview(href='/magazine/interview') 
+      | 인터뷰
+      span.count 11
+    a.trend(href='/magazine/trend')
+      | 숙박업동향
+      span.count 345
+    a.onda-note(href='/magazine/onda-note')
+      | 온다 노트
+      span.count 78
+    a.partner-note(href='/magazine/partner-note')
+      | 타트너 노트
+      span.count 140
+  section(id='magazine-list')
+    .content-container
+      .row
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp01.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp02.jpg')
+          .category 파트너 노트
+          .title 안녕하세요
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp03.jpg')
+          .category 파트너노트
+          .title 젊은 사장님의 운영 노하우
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp01.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp01.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp02.jpg')
+          .category 파트너 노트
+          .title 안녕하세요
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp04.jpg')
+          .category 파트너노트
+          .title 젊은 사장님의 운영 노하우
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp02.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp01.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp02.jpg')
+          .category 파트너 노트
+          .title 안녕하세요
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp03.jpg')
+          .category 파트너노트
+          .title 젊은 사장님의 운영 노하우
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+        .post.col-lg-3
+          img.img-fluid.thumbnail(src='/images/temp01.jpg')
+          .category 인터뷰
+          .title 돈키호테 게스트하우스
+          .preview 안녕하세요. 재작년 11월 1일에 오픈을 한 돈키호테 게스트하우스를 운영 중인 김정한입니다. 저희 게스트하우스는 어쩌고 저쩌고 글자수가 많으면 자동으로 잘리게
+          .source MAGAZINE ON 2017년 10월호
+      .py-5
+      nav
+        ul.pagination.justify-content-center
+          li.page-item
+            a.page-link(href='#', aria-label='Previous')
+              img.arrow(src='/images/arrow-left.svg')
+              span.sr-only Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#') 4
+          li.page-item
+            a.page-link(href='#') 5
+          li.page-item
+            a.page-link(href='#') 6
+          li.page-item
+            a.page-link(href='#') 7
+          li.page-item
+            a.page-link(href='#') 8
+          li.page-item
+            a.page-link(href='#') 9
+          li.page-item
+            a.page-link(href='#') 10
+          li.page-item
+            a.page-link(href='#', aria-label='Next')
+              img.arrow(src='/images/arrow-right.svg')
+              span.sr-only Next
+        .py-5
+
+
+  include footer.pug

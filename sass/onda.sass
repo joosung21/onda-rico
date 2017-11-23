@@ -50,6 +50,8 @@ p
     &:hover
       color: lighten(#58a9fe, 15%)
       border-color: lighten(#58a9fe, 15%)
+#sub-top
+  background-color: #353c56
 
 a.short-cut
   font-weight: 400
@@ -97,6 +99,10 @@ a.short-cut
     &:hover
       color: #58a9fe
       border-color: #58a9fe
+    .count
+      color: #58a9fe  
+      font-size: 1rem
+      padding-left: .3rem
 
 .bg-light
   background-color: #f3f4f8 !important
@@ -113,6 +119,18 @@ a.short-cut
 
 .text-thin
   font-weight: 100
+
+.pagination
+  .page-item
+    &.active
+      .page-link
+        background-color: #9fa4b6
+        color: white
+    .page-link
+      color: #444444
+      border: none
+    .arrow
+      margin-top: -0.2rem
 
 // HOME
 #main-slider
@@ -167,7 +185,7 @@ a.short-cut
 #magazine
   width: 100vw
   height: 910px
-  background: #323240 url('/images/section-bg-01.jpg') no-repeat center center fixed
+  background: #323240 url('/images/section-bg-01.jpg') no-repeat top center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
@@ -286,6 +304,53 @@ footer
   padding: 6rem 0 2rem 0
 #service-pension-gds
   padding: 6rem 0 6rem 0
+
+//----- 메거진 온 -----//
+#magazine-top
+  width: 100vw
+  height: 380px
+  padding-top: 7rem
+  background: #323240 url('/images/section-bg-02.jpg') no-repeat top center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  text-align: center
+  color: white
+  .catch-praise
+    font-size: 3.1rem
+    margin-bottom: 1.4rem
+
+
+#magazine-list
+  .post
+    padding-top: 3rem
+    .thumbnail
+      margin-bottom: 1rem
+    .category
+      color: #76b9ff
+    .title
+      font-size: 1.5rem
+      font-weight: 300
+      margin-bottom: .5rem
+    .preview
+      display: block
+      display: -webkit-box
+      $font-size: 1.2rem
+      $line-height: 1.5      
+      $lines-to-show: 3
+      height: $font-size * $line-height * $lines-to-show
+      font-size: $font-size
+      line-heigh: $line-height
+      line-height: $line-height
+      -webkit-line-clamp: $lines-to-show
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-bottom: .7rem
+    .source
+      color: #999999
+      font-size: .9rem
 
 
 
