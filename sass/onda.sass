@@ -108,7 +108,11 @@ a.short-cut
   background-color: #f3f4f8 !important
 
 .btn
-  padding: 1rem 2rem
+  padding: .2rem 2rem
+  font-weight: 300
+  font-size: 1.2rem
+  &.btn-lg
+    padding: 1rem 2rem
   &.btn-primary
     background-color: #58a9fe
     border-color: #58a9fe
@@ -269,9 +273,54 @@ footer
   span
     margin: 0 1rem
 
-//-- 서비스 페이지 --//
 
-// Hotel
+//-- 서비스 페이지 --//
+#service
+  position: relative
+  background-color: #353c56
+  #top
+    position: absolute
+    top: 0
+    z-index: 10
+  .service-choice
+    margin: 0 -3rem
+    z-index: 0
+    .wrapper
+      padding-top: 28vh
+      height: calc(100vh - 5rem)
+      background-color: #353c56
+      text-align: center
+      color: white
+      cursor: pointer
+      transition: all .3s
+      .icon
+        filter: grayscale(75%)
+        transition: all .3s
+      .title
+        font-size: 2rem
+        line-height: 2.6rem
+        padding: 2rem 0
+      .desc
+        opacity: .5
+        transition: all .3s
+      .go
+        display: inline-block
+        margin-top: 10vh
+        transition: all .3s
+        font-size: 1.2rem
+        border-bottom: 1px solid white               
+      &:hover
+        background-color: #3b435f
+        .icon
+          filter: grayscale(0%)
+        .desc
+          opacity: 1
+        .go
+          color: #76b9ff
+          border-color: #76b9ff 
+
+
+// 호텔, 게스트하우스
 #service-hotel-top
   background-color: #353c56
   .wrapper
@@ -289,7 +338,7 @@ footer
 #service-hotel-gds
   padding: 6rem 0 6rem 0
 
-// Pension
+// 펜션
 #service-pension-top
   background-color: #353c56
   .wrapper
@@ -325,8 +374,10 @@ footer
 #magazine-list
   .post
     padding-top: 3rem
+    cursor: pointer
     .thumbnail
       margin-bottom: 1rem
+      transition: all .3s
     .category
       color: #76b9ff
     .title
@@ -349,9 +400,70 @@ footer
       text-overflow: ellipsis
       margin-bottom: .7rem
     .source
-      color: #999999
+      color: #cccccc
       font-size: .9rem
+    &:hover .thumbnail
+      filter: brightness(120%)
 
+#magazine-post
+  .blog-body
+    padding: 4rem 8vw 6rem 0
+    border-right: 1px solid #efefef    
+    .post-head
+      .category
+        color: #76b9ff
+        font-size: 1.2rem
+      .source
+        margin-left: .5rem
+        color: #cccccc
+    .post-title
+      font-size: 2.8rem
+      font-weight: 600
+      margin-bottom: 2.5rem
+    .post-content
+      font-size: 1.2rem
+      text-align: justify      
+      p 
+        font-size: 1.2rem
+        text-align: justify
+      img
+        margin-bottom: 2.5rem
+  .blog-side
+    padding: 4rem 0 0 2rem
+    font-size: 1.2rem
+    font-weight: 400
+    .row
+      padding: .7rem 0
+      cursor: pointer
+      .source
+        font-weight: 300
+        font-size: .8rem
+        color: #cccccc
+      img
+        transition: all .3s
+      &:hover
+        img
+          filter: brightness(120%)
+    .page-indicator
+      font-size: 1rem
+      letter-spacing: 0
+      font-weight: 100
+      text-align: right
+      margin-top: 2rem
+      .white-btn
+        + .white-btn
+          margin-left: -1px
+        display: inline-block
+        border: 1px solid #dddddd
+        line-height: 1rem
+        opacity: .5
+        padding: .4rem .7rem
+        img
+        &:hover
+          opacity: 1
+          background: #fafafa
+          
+      
 
 
 
@@ -361,17 +473,23 @@ footer
 @media (min-width: 500px)
   section#main-slider
 
-// Medium devices (768px and up)
+// Medium devices (768px and- up)
 @media (min-width: 768px)  
   .content-container
     width: 90vh
+  #top
+    width: calc(90vh - 2rem)
 
 // Large devices (desktops, 1200px and up)
 @media (min-width: 1200px)
   .content-container
     width: 1300px
+  #top
+    width: calc(1300px - 2rem)
 
 // Extra large devices (large desktops, 1700px and up)
 @media (min-width: 2000px)
-  .content-container
+  .content-container, #top
     width: 1540px
+  #top
+    width: calc(1540px - 2rem)

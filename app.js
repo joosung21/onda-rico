@@ -14,23 +14,31 @@ app.get('/', function (req, res){
 })
 
 // 서비스
-app.get('/service/hotel', function (req, res){
+app.get('/service', function (req, res){
   title = 'ONDA - 서비스'
+  res.render('service')
+})
+app.get('/service/hotel', function (req, res){
+  title = 'ONDA - 호텔, 게스트하우스 예약관리 프로그램'
   res.render('service-hotel')
 })
 app.get('/service/pension', function (req, res){
-  title = 'ONDA - 서비스'
+  title = 'ONDA - 펜션 예약관리 프로그램'
   res.render('service-pension')
 })
 app.get('/service/b2b', function (req, res){
-  title = 'ONDA - 서비스'
+  title = 'ONDA - 숙박중개 사업자를 위한 B2B 플랫폼'
   res.render('service-b2b')
 })
 
 // 메거진
-app.get('/magazine', function (req, res){
+app.get('/magazine/', function (req, res){
   title = 'ONDA - 메거진 온'
   res.render('magazine')
+})
+app.get('/magazine/post', function (req, res){
+  title = '메거진 온 - 포스트 제목'
+  res.render('magazine-post')
 })
 
 
