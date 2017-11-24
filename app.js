@@ -41,8 +41,11 @@ app.get('/magazine/post', function (req, res){
   res.render('magazine-post')
 })
 
-
-
+// 멤버/채용
+app.get('/member', function (req, res){
+  title = 'ONDA - 멤버/채용'
+  res.render('member')
+})
 
 app.listen(3000, function () {
   console.log('App listening on port 3000!')

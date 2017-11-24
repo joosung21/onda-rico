@@ -13,6 +13,10 @@ body a
   transition: all .3s
   cursor: pointer
 
+body button
+  transition: all .3s
+  cursor: pointer
+
 h2
   font-size: 2.2rem
   font-weight: 600
@@ -32,9 +36,7 @@ p
   .logo
     margin-right: 1.5rem
     img
-      width: 90px
-    &:hover
-      filter: brightness(120%)
+      width: 90px    
   a.nav
     font-size: 1.1rem
     color: white    
@@ -64,7 +66,7 @@ a.short-cut
     position: relative
     top: -0.1rem
   &:hover
-    filter: brightness(120%)
+    filter: brightness(110%)
 
 .display-description
   padding: 8rem 0
@@ -95,10 +97,7 @@ a.short-cut
     margin: 0 2rem
     text-decoration: none
     &.active
-      border-bottom: 2px solid #353c56
-    &:hover
-      color: #58a9fe
-      border-color: #58a9fe
+      border-bottom: 2px solid #353c56    
     .count
       color: #58a9fe  
       font-size: 1rem
@@ -113,6 +112,9 @@ a.short-cut
   font-size: 1.2rem
   &.btn-lg
     padding: 1rem 2rem
+  &.btn-sm
+    font-size: .75rem
+    padding: .13rem .6rem
   &.btn-primary
     background-color: #58a9fe
     border-color: #58a9fe
@@ -136,7 +138,10 @@ a.short-cut
     .arrow
       margin-top: -0.2rem
 
-// HOME
+img.icon-black
+  filter: brightness(30%)
+
+//----- HOME ------//
 #main-slider
   width: 100vw
   height: 100vh  
@@ -193,7 +198,7 @@ a.short-cut
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
-  background-size: cover  
+  background-size: cover
   .magazine-slider
     position: relative
     a.carousel-control-prev, a.carousel-control-next      
@@ -211,16 +216,15 @@ a.short-cut
       img        
         width: 230px
         transition: all .3s
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.4)
       .caption
         text-align: center
         padding: 1rem 0
         color: white
         font-weight: 300
         letter-spacing: 0
-      &:hover          
-        img          
-          box-shadow: 0 1rem 2rem rgba(0,0,0,0.4)
-          filter: brightness(120%)
+      &:hover img
+        filter: brightness(110%)
     .empty
       width: 230px
 #numbers
@@ -287,7 +291,7 @@ footer
     z-index: 0
     .wrapper
       padding-top: 28vh
-      height: calc(100vh - 5rem)
+      height: calc(100vh - 4.6rem)
       background-color: #353c56
       text-align: center
       color: white
@@ -370,7 +374,6 @@ footer
     font-size: 3.1rem
     margin-bottom: 1.4rem
 
-
 #magazine-list
   .post
     padding-top: 3rem
@@ -403,7 +406,7 @@ footer
       color: #cccccc
       font-size: .9rem
     &:hover .thumbnail
-      filter: brightness(120%)
+      filter: brightness(110%)
 
 #magazine-post
   .blog-body
@@ -443,7 +446,7 @@ footer
         transition: all .3s
       &:hover
         img
-          filter: brightness(120%)
+          filter: brightness(110%)
     .page-indicator
       font-size: 1rem
       letter-spacing: 0
@@ -463,9 +466,70 @@ footer
           opacity: 1
           background: #fafafa
           
-      
-
-
+//----- 멤버/채용 페이지 ------//
+.sub-title
+  color: #58a9fe
+  font-size: 3.4rem
+  font-weight: 600
+  line-height: 4rem
+#member-top
+  background-color: #353c56
+  padding: 6rem 0
+#member-people
+  background-color: #353c56
+  color: white
+  padding: 6rem 0
+  .person
+    padding-bottom: 5rem
+    .picture
+      margin-bottom: .8rem      
+    .position
+      color: #76b9ff
+      font-weight: 300
+    .name
+      font-size: 1.5rem      
+      font-weight: 300
+      margin-bottom: .8rem
+    .comment
+      font-size: .9rem
+      color: #f3f4f8
+  .view-more
+    margin-top: 2rem
+    text-align: right
+    a
+      color: white
+      font-size: 1.2rem
+      font-weight: 300
+      text-decoration: none
+#welfare
+  padding: 8rem 0 2rem 0
+  .item
+    padding-bottom: 6rem
+    .title
+      font-size: 1.5rem
+      font-weight: 300
+      margin-top: 2rem
+      margin-bottom: .5rem
+    .desc
+      font-size: 1.1rem
+#recruit
+  padding: 0 0 12rem 0
+  #recruitAccordion
+    .item
+      a.title
+        display: block
+        padding: 1rem
+        color: #444444
+        font-size: 1.5rem
+        font-weight: 300
+        border-top: 2px solid #444444
+        border-bottom: 1px solid #efefef
+        cursor: pointer
+        text-decoration: none
+      pre
+        padding: 1rem
+        font-size: 1.2rem
+        
 
 //------------------------- Responsive Media Setting ---------------------------//
 

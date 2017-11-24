@@ -1,0 +1,267 @@
+include header.pug
+
+body(name='member')
+  section(id='sub-top')
+    .content-container
+      include top.pug
+  section(id='member-top')
+    .content-container
+      .row
+        .sub-title.col-lg-3
+          | 우리는
+          br
+          | 진짜
+          br
+          | 수평적인
+          br
+          | 회사입니다
+        .col-lg-9
+
+  section(id='member-people')
+    .content-container
+      .row
+        .sub-title.col-lg-2
+          | 만드는 사람들
+        .col-lg-10
+          .row
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp07.jpg')
+              .d-flex
+                .position R&amp;D_Team Leader
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jade 원경묵
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp08.jpg')
+              .d-flex
+                .position CS_Manager
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Crystal 김보람
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp07.jpg')
+              .d-flex
+                .position UX_Specialist
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jay 안주성
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp08.jpg')
+              .d-flex
+                .position B&amp;M_Marketer
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jessica 장윤정
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp09.jpg')
+              .d-flex
+                .position R&amp;D_Team Leader
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jade 원경묵
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp10.jpg')
+              .d-flex
+                .position CS_Manager
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Crystal 김보람
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp09.jpg')
+              .d-flex
+                .position UX_Specialist
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jay 안주성
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+            .person.col-xl-3.col-lg-4
+              img.img-fluid.picture(src='/images/temp09.jpg')
+              .d-flex
+                .position B&amp;M_Marketer
+                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+              .name Jessica 장윤정
+              .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
+          
+          .view-more
+            a(href='#')
+              | 모두 보기
+              img.pl-3(src='/images/arrow-down.svg')
+  section(id='welfare')
+    .content-container
+      .row
+        .sub-title.col-lg-2
+          | 복지
+        .col-lg-10
+          .row
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-01.svg')
+              .title 연차
+              .desc 
+                | 입사하신 모든 분들께 
+                br
+                | 15일의 연차를 드려요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-02.svg')
+              .title 반차데이
+              .desc 
+                | 연차 외에도 매월 하나씩
+                br
+                | 반차휴가를 드려요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-03.svg')
+              .title 생일휴가
+              .desc 
+                | 생일에는 회사일은 잠시 잊고
+                br
+                | 가족, 친구, 연인과 함께하세요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-04.svg')
+              .title 여행장려휴가
+              .desc 
+                | 1년동안 함꼐해 주셔서 감사합니다.
+                br
+                | 여행 한 번 다녀오세요~
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-05.svg')
+              .title 리모트 근무
+              .desc 
+                | 집중이 필요할 때는 집이나 카페 등
+                br
+                | 원하는 공간에서 근무하세요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-06.svg')
+              .title 맥 지원
+              .desc 
+                | 업무에 필요한 장비를 지원해드려요                
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-07.svg')
+              .title 도서지원
+              .desc 
+                | 책은 성장의 원천!
+                br
+                | 업무에 도움이 되는 책은 마음껏 구매하세요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-08.svg')
+              .title 경조사 지원
+              .desc 
+                | 경조사 시 축/조의금과 축하물품을 지원합니다.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-09.svg')
+              .title 건강검진
+              .desc 
+                | 아프지마요.
+                br
+                | 정기적으로 건강검진을 시행해요.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-10.svg')
+              .title 4대보험
+              .desc 
+                | 4대보험은 기본이죠.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-11.svg')
+              .title 인재추천 포상
+              .desc 
+                | 좋은 인재가 있다면 추천해 주세요.
+                br
+                | 소정의 포상금을 지급합니다.
+            .item.col-lg-3.col-sm-6
+              img(src='/images/welfare-12.svg')
+              .title 힐링메이트
+              .desc 
+                | 마음이 괴로울때 찾아오세요.
+                br
+                | 고민을 털어놓을 수 있는 동료들이 있어요.
+  section(id='recruit')
+    .content-container
+      .row
+        .sub-title.col-lg-2
+          | 채용
+        .col-lg-10
+          #recruitAccordion(data-children='.item')
+            .item
+              a.title.d-flex(data-toggle='collapse', data-parent='#recruitAccordion', href='#recruitAccordion1', aria-expanded='true', aria-controls='recruitAccordion1')
+                span 프론트엔드 개발자 상시채용
+                img.icon-black.ml-auto.pt-1(src='/images/arrow-down.svg')
+              #recruitAccordion1.collapse.show(role='tabpanel')
+                pre.
+                  기술
+                  AWS 인프라 기반, Node.js, TypeScript, Angular, MySQL, GraphQL, REDIS, git 등
+
+                  자격요건
+                  angular.js와 graphql을 이용한 서비스 개발, 운영
+                  테스트 코드 작성 및 패키지 배포 관리
+                  UI/UX 설계 프로세스 주도적 참여
+                  git 사용 경험자
+                  웹 표준,웹 접근성에 대한 이해
+
+                  우대사항
+                  HTML5 기반의 반응형 웹, 모바일플랫폼 개발경험
+                  오픈소스 javascript library 사용 경험
+                  TypeScript 개발 경험
+                  react.js, angular.js 등을 사용하여 애플리케이션 경험이 있으신 분
+                  MVC 등 패턴에 대한 경험이 있으신 분
+
+                  기타
+                  - 300만원+a의 개발 장비 지원 (MacBook Pro Retina 및 와이드 모니터 등)
+                  - 리모트 근무
+                  - 사내 개발 세미나
+                  - DevDay 진행                  
+            .item
+              a.title.d-flex(data-toggle='collapse', data-parent='#recruitAccordion', href='#recruitAccordion2', aria-expanded='false', aria-controls='recruitAccordion2')
+                span 백엔드 개발자 수시모집
+                img.icon-black.ml-auto.pt-1(src='/images/arrow-down.svg')
+              #recruitAccordion2.collapse(role='tabpanel')
+                pre.
+                  기술
+                  AWS 인프라 기반, Node.js, TypeScript, Angular, MySQL, GraphQL, REDIS, git 등
+
+                  자격요건
+                  angular.js와 graphql을 이용한 서비스 개발, 운영
+                  테스트 코드 작성 및 패키지 배포 관리
+                  UI/UX 설계 프로세스 주도적 참여
+                  git 사용 경험자
+                  웹 표준,웹 접근성에 대한 이해
+
+                  우대사항
+                  HTML5 기반의 반응형 웹, 모바일플랫폼 개발경험
+                  오픈소스 javascript library 사용 경험
+                  TypeScript 개발 경험
+                  react.js, angular.js 등을 사용하여 애플리케이션 경험이 있으신 분
+                  MVC 등 패턴에 대한 경험이 있으신 분
+
+                  기타
+                  - 300만원+a의 개발 장비 지원 (MacBook Pro Retina 및 와이드 모니터 등)
+                  - 리모트 근무
+                  - 사내 개발 세미나
+                  - DevDay 진행
+            .item
+              a.title.d-flex(data-toggle='collapse', data-parent='#recruitAccordion', href='#recruitAccordion3', aria-expanded='false', aria-controls='recruitAccordion3')
+                span 숙박 영업 (신입.경력)
+                img.icon-black.ml-auto.pt-1(src='/images/arrow-down.svg')
+              #recruitAccordion3.collapse(role='tabpanel')
+                pre.
+                  기술
+                  AWS 인프라 기반, Node.js, TypeScript, Angular, MySQL, GraphQL, REDIS, git 등
+
+                  자격요건
+                  angular.js와 graphql을 이용한 서비스 개발, 운영
+                  테스트 코드 작성 및 패키지 배포 관리
+                  UI/UX 설계 프로세스 주도적 참여
+                  git 사용 경험자
+                  웹 표준,웹 접근성에 대한 이해
+
+                  우대사항
+                  HTML5 기반의 반응형 웹, 모바일플랫폼 개발경험
+                  오픈소스 javascript library 사용 경험
+                  TypeScript 개발 경험
+                  react.js, angular.js 등을 사용하여 애플리케이션 경험이 있으신 분
+                  MVC 등 패턴에 대한 경험이 있으신 분
+
+                  기타
+                  - 300만원+a의 개발 장비 지원 (MacBook Pro Retina 및 와이드 모니터 등)
+                  - 리모트 근무
+                  - 사내 개발 세미나
+                  - DevDay 진행
+
+                
+
+  include footer.pug
