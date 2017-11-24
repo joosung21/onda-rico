@@ -5,14 +5,104 @@ body(name='service', page='b2b')
     .content-container
       include top.pug
       .wrapper.row.no-gutters
-        .col-lg-6
+        .col-lg-6.pl-5
           .catch-praise
-            | b2b
+            | 숙박업 중개업자를 위한
             br
-            | Under Construction
+            | B2B 플랫폼           
+          a.btn.btn-lg.btn-primary.mt-4.py-3.px-5(href='#', target='_blank')
+            img.mr-2(src='/images/icon-note.svg')
+            | 제휴문의
+            
         .col-lg-6
-          
+          img.img-fluid(src='/images/mockup-b2b.png')
+            
   section(class='tab-menu')
     a.hotel(href='/service/hotel') 호텔,게스트하우스 예약관리 프로그램
     a.pension(href='/service/pension') 펜션예약관리 프로그램
     a.b2b(href='/service/b2b') B2B 플랫폼
+
+  section(id='white-label')
+    .content-container
+      .row
+        .col-lg-5
+          img.img-fluid(src='/images/service09.png')
+        .col-lg-7
+          h2.pt-5.mt-4.mb-4 화이트라벨 플랫폼
+          p 티포트는 숙소 예약관리 프로그램 전문 개발업체로 당사가 개발한 프로그램(PMS)을 귀사의 이름으로 서비스할 수 있도록 화이트 라벨링 서비스를 제공하고 있습니다. 이제는 최고의 객실 예약관리 프로그램(PMS)에 맡기고 상품 판매에 집중하세요.
+  section(id='extranet')
+    .content-container
+      .row
+        .col-lg-7
+          h2.pt-5.mt-4.mb-4  엑스트라넷 플랫폼
+          p 숙소 판매를 위한 B2C 플랫폼은 보유하고 있지만, 상품관리를 위한 시스템이 불편하지는 않으신가요? '글로벌 OTA 표준'에 맞추어 제작된 온다 엑스트라넷은 실시간 요금 및 재고를 관리할 수 있습니다. 귀사의 사이트에 호텔상품관리에 최적화 된 온다 엑스트라넷을 연동해보세요.
+        .col-lg-5
+          img.img-fluid(src='/images/service10.png')
+
+  section(id='service-pension-pms')
+    .content-container
+      h2.mb-3 예약관리 프로그램
+      .row
+        .col-lg-6
+          .row.pt-5.mt-3
+            .col-lg-6
+              h3 쉽고 편리한 예약관리
+              p 더이상 복잡한 장부를 들여다 보실 필요 없습니다. 이제 고객응대만 집중하세요.
+            .col-lg-6
+              h3 온다펜션관리 APP
+              p 예약관리에 꼭 필요한 기능을 모바일 App에 모두 담았습니다. 언제 어디서든 예약을 관리하세요.
+          .row.pt-4
+            .col-lg-6
+              h3 자동 방막기
+              p 예약관리에 꼭 필요한 기능을 모바일 App에 모두 담았습니다. 언제 어디서든 예약을 관리하세요.
+            .col-lg-6
+              h3 카드결제 OK!
+              p 카드번호와 유효기간 입력만으로 고객들로부터 결제를 받으세요. 합리적인 수수료로 파트너분들의 업무를 지원합니다.
+        .col-lg-6
+          img.img-fluid(src='/images/service05.png')
+  section.bg-light(id='service-pension-bp')
+    .content-container
+      h2 실시간 예약창
+      .row
+        .col-lg-5
+          img.img-fluid.pb-5(src='/images/service06.png')
+        .col-lg-7.pt-5
+          .row
+            .col-lg-8
+              img.img-fluid.pb-5(src='/images/service07.png')
+          .row
+            .col-lg-6
+              h3 간편한 연동
+              p 
+                | 파트너님이 운영중인 웹사이트에서 직접 예약을 받으세요. 온다의 실시간 예약창은 어떤 웹사이트에서도 쉽게 연동할 수 있습니다.
+            .col-lg-6
+              h3 빠른 결제 서비스
+              p 
+                | 복잡한 플러그인이나 ActiveX를 설치 할 필요가 없습니다. 고객의 예약을 더 많이 받기 위한 최적의 결제시스템을 제공합니다.  
+  section(id='service-pension-gds')
+    .content-container
+      h2 온다 판매대행
+      .row        
+        .col
+          h3 온다 판매대행
+          p 
+            | 온다와 강력한 파트너십이 맺어진 국내외 수 많은 채널에서 상품을 판매해보세요. 단 한번의 계약만으로 여러 사이트에서 상품을 동시 판매할 수 있습니다.
+            br
+            | ※ 수수료 계약 필요
+        .col
+          h3 주 단위 정산
+          p 
+            | 정산을 위해 복잡한 송장 발행이나, 수수료 입금절차가 필요없습니다.
+            br
+            | 투숙완료 시점을 기준으로 익주 금요일에 정산이 완료됩니다.
+      img.img-fluid.mt-5(src='/images/service08.png')
+      .py-5
+      .text-center
+        a.btn.btn-lg.btn-primary(href='https://app.onda.me/signup') 
+          | 예약관리 프로그램 시작하기
+          span.text-thin  (무료)
+
+include footer.pug
+
+
+
