@@ -1,3 +1,14 @@
+// Top Navigation Responsive
+function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
+
+
 $( document ).ready(function() {
   
   // Top Nav Active
@@ -28,21 +39,21 @@ $( document ).ready(function() {
             counterDone = true;
             $('.counter').each(function() {              
               var $this = $(this),
-                  countTo = $this.attr('data-count');
-              var a = "";            
+                countTo = $this.attr('data-count');
+              var a;            
               $({ countNum: $this.text()}).animate({
                 countNum: countTo
               },
               {          
-                duration: 30000,
+                duration: 2000,
                 easing: 'linear',            
                 step: function() {
-                  a = Math.floor(this.countNum);
+                  a = Math.round(this.countNum);
                   a = a.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                   $this.text(a);
                 },
                 complete: function() {
-                  // $this.text(a);                         
+                  $this.text(a);                         
                 }          
               });
             });

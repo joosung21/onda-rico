@@ -52,8 +52,49 @@ p
     &:hover
       color: lighten(#58a9fe, 15%)
       border-color: lighten(#58a9fe, 15%)
+  a.icon    
+    color: white
+    font-size: 1.8rem
+    line-height: 1.8rem
+    text-decoration: none
+    display: none
 #sub-top
   background-color: #353c56
+
+@media screen and (max-width: 600px)
+  #top
+    margin: 0 -.7rem
+    padding: .5rem .7rem !important
+  .topnav a
+    &:not(:first-child)
+      display: none      
+  a.icon    
+    float: right
+    display: inline-block !important
+    margin-left: auto
+
+@media screen and (max-width: 600px)
+  #top
+    padding: .7rem 0
+    background-color: #353c56
+  .topnav.responsive
+    position: relative
+    .d-flex > *
+      display: block
+    a
+      float: none
+      display: block
+      width: 100%
+      text-align: left
+    a.nav
+      margin: .5rem 1rem !important      
+    a.icon
+      display: block
+      position: absolute      
+      top: 9px
+      right: 10px
+      text-align: right
+      
 
 a.short-cut
   font-weight: 400
@@ -206,7 +247,7 @@ img.icon-black
     margin-bottom: 2.2rem
 
 #partners
-  margin: 4rem 0 6rem 0
+  margin: 4rem 0 8rem 0
 
 #magazine
   width: 100vw
@@ -253,11 +294,11 @@ img.icon-black
     font-size: 3rem
     margin-bottom: 5rem
   .items
-    .item
+    .item      
       height: 10rem
       .display
         display: inline-block
-        text-align: center
+        text-align: center        
         img
           width: 68px
           margin-bottom: .7rem
@@ -271,9 +312,7 @@ img.icon-black
         padding-left: .5rem
 
 .store-btns    
-  margin-top: 2rem
-  a + a
-    margin-left: .7rem
+  margin-top: 2rem  
   img
     width: 224px
     transition: all .3s
@@ -539,6 +578,8 @@ footer
   padding: 8rem 0 2rem 0
   .item
     padding-bottom: 6rem
+    img
+      height: 5rem
     .title
       font-size: 1.5rem
       font-weight: 300
@@ -582,6 +623,42 @@ footer
 
 
 //------------------------- Responsive Media Setting ---------------------------//
+
+@media screen and (max-width: 600px)
+  #main-slider 
+    .title
+      font-size: 2rem
+    img.logo2      
+      width: 120px
+      height: 30px
+      margin-top: 8px
+  section
+    padding: 0 !important   
+
+  .display-description
+    padding: 0 1rem
+    .title
+      border: none
+    .content
+      padding: 0
+  #catch-praise
+    font-size: 2.2rem
+    margin-top: 3rem
+  #magazine
+    height: auto
+    .magazine-slider
+      display: none
+    .mobile-magazine
+      display: block !important
+      padding-top: 1rem
+      padding-bottom: 1rem
+      img
+        width: 100%
+  #numbers
+    .title
+      font-size: 2.5rem
+      
+
 
 // Small devices (landscape phones, 500px and up)
 @media (min-width: 500px)
