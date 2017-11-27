@@ -17,37 +17,39 @@ $( document ).ready(function() {
   });
 
   // CounterUp
-  var scollH = 0;
-  var aH = $('.counter').position().top;
-  var counterDone = false;
-  if (counterDone == false) {
-    $(document).on('scroll', function() {
-        scrollH = $(document).scrollTop();
-        if (scrollH > aH && counterDone == false) {
-          counterDone = true;
-          $('.counter').each(function() {              
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-            var a = "";            
-            $({ countNum: $this.text()}).animate({
-              countNum: countTo
-            },
-            {          
-              duration: 30000,
-              easing: 'linear',            
-              step: function() {
-                a = Math.floor(this.countNum);
-                a = a.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                $this.text(a);
+  if(thisPage = $('body').attr('name') == 'home') {
+    var scollH = 0;
+    var aH = $('.counter').position().top;
+    var counterDone = false;
+    if (counterDone == false) {
+      $(document).on('scroll', function() {
+          scrollH = $(document).scrollTop();
+          if (scrollH > aH && counterDone == false) {
+            counterDone = true;
+            $('.counter').each(function() {              
+              var $this = $(this),
+                  countTo = $this.attr('data-count');
+              var a = "";            
+              $({ countNum: $this.text()}).animate({
+                countNum: countTo
               },
-              complete: function() {
-                // $this.text(a);                         
-              }          
+              {          
+                duration: 30000,
+                easing: 'linear',            
+                step: function() {
+                  a = Math.floor(this.countNum);
+                  a = a.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                  $this.text(a);
+                },
+                complete: function() {
+                  // $this.text(a);                         
+                }          
+              });
             });
-          });
-        }
-    });
-  }  
+          }
+      });
+    }  
+  }
 
 });
 

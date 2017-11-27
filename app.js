@@ -47,6 +47,12 @@ app.get('/member', function (req, res){
   res.render('member')
 })
 
+// 멤버/채용
+app.get('/affliate', function (req, res){
+  title = 'ONDA - 제휴'
+  res.render('affliate')
+})
+
 app.listen(3000, function () {
   console.log('App listening on port 3000!')
 })

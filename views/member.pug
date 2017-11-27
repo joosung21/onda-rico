@@ -28,56 +28,56 @@ body(name='member')
               img.img-fluid.picture(src='/images/temp07.jpg')
               .d-flex
                 .position R&amp;D_Team Leader
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Jade 원경묵
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp08.jpg')
               .d-flex
                 .position CS_Manager
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Crystal 김보람
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp07.jpg')
               .d-flex
                 .position UX_Specialist
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                
               .name Jay 안주성
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp08.jpg')
               .d-flex
                 .position B&amp;M_Marketer
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Jessica 장윤정
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp09.jpg')
               .d-flex
                 .position R&amp;D_Team Leader
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Jade 원경묵
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp10.jpg')
               .d-flex
                 .position CS_Manager
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Crystal 김보람
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp09.jpg')
               .d-flex
                 .position UX_Specialist
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Jay 안주성
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
             .person.col-xl-3.col-lg-4
               img.img-fluid.picture(src='/images/temp09.jpg')
               .d-flex
                 .position B&amp;M_Marketer
-                button.btn.btn-sm.btn-primary.ml-auto(type='button') 인터뷰 보기
+                button.btn.btn-sm.btn-primary.ml-auto(type='button', data-toggle='modal', data-target='#interviewModal') 인터뷰 보기
               .name Jessica 장윤정
               .comment 회사에 대한 코멘트, 취미 등 개성넘치는 한마디를 표현합니다
           
@@ -262,6 +262,36 @@ body(name='member')
                   - 사내 개발 세미나
                   - DevDay 진행
 
-                
+  //-- 인터뷰 모달
+  #interviewModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='interviewModalLabel', aria-hidden='true')
+    .modal-dialog.modal-lg(role='document')
+      .modal-content
+        .modal-header          
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true')
+              img(src='/images/close.svg')
+        .modal-body.interview
+          .row
+            .left.col-lg-3
+              .position B&amp;M_Marketer
+              .greeting 
+                | Hello
+                br
+                | Jessica        
+            .content.col-lg-9
+              h3 Q 안녕하세요. 자기소개 부탁드려요
+              p 안녕하세요. T Port(기업명) 브랜딩&amp;마케팅팀의 장윤정(Jessica)입니다. 전공은 건축설계이지만 젊을 때 여러 분야에서 다양한 경험을 해보고 싶은 마음이 컸기에 공기업에서 인턴도 해보고 해외 게스트하우스 체인에서 마케터로도 일하다 우연한 기회로 Tport팀에 합류하게 되었습니다.
+              br
+              h3 Q 팀 내에서는 어떤 일을 주로 맡고 계신가요?
+              p.
+                주로 하는 업무는 ZARI 블로그 및 SNS를 통해 숙소 운영에 필요한 정보공유, 프로모션 진행 그리고 
+                ZARI 서비스 소식을 파트너 분들께 전해드리고 있습니다. 그리고 지금 읽고 계시는 ‘매거진 자리’의 기획과 
+                디자인도 함께 병행하고 있습니다. 매거진의 경우 작년 연말 회의 중 우연히 이야기가 나와 빠르게 기획 후 
+                2017년 1월부터 발행하기 시작했습니다. 디자이너가 따로 없다보니 야매 디자이너인 제가 
+                나름의 디자인 기획(?)후 망하지 않고 지금까지 꾸준히 나오고 있는데요. 새로운 디자인 툴에 어느정도 적응이 
+                되면서 디자인이 나날이 발전하는 것 같아서 뿌듯함과 동시에 자부심을 가지고 작업을 하고 있습니다.
+                아직도 갈길이 멀다고 생각은 합니다. 그래도 뿐만 아니라 숙박업에 계시는 많은 분들께서 ‘매거진자리’를 
+                사랑해주시고 관심을 가져주셔서 더 책임감을 가지고 좋은 컨텐츠를 제공해드리기 위해서 
+                저희 팀은 최선을 다하겠습니다!
 
   include footer.pug

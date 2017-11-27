@@ -1,0 +1,69 @@
+include header.pug
+
+body(name='affliate')
+  section(id='sub-top')
+    .content-container
+      include top.pug
+  section(id='affliate-ment')
+    .content-container      
+      img(src='/images/quote-start.png', style='width: 30px')
+      p
+        | 똑똑한 호텔, 펜션, 게스트하우스 예약관리 프로그램 어디 없나?
+        br
+        | 내가 갖고 있는 상품을 더 많은 채널에 공급하고 싶은데...
+        br
+        | 내가 사용중인 플랫폼에 더 많은 상품을 판매하고 싶은데...
+        br
+        | 어디로 가야 내가 찾는 숙박관련 IT기술이 있을까
+      img(src='/images/quote-end.png', style='width: 30px')
+      .py-5
+      .h1(style='font-weight: 600')
+        | 이러한 고민들 모두 온다와 함께 해결해보세요!
+        br
+        | 다양한 사업 및 제안을 기다립니다.
+      a.btn.btn-lg.btn-primary.my-5(href='#')
+        img.mr-2(src='/images/download.svg')
+        span ONDA 소개자료 다운받기
+  section(id='affliate-form')
+    form
+      .content-container
+        .row
+          .col-lg-7.mx-auto
+            .form-group
+              input.form-control.form-control-lg(type='text', placeholder='이름')
+            .form-group
+              input.form-control.form-control-lg(type='text', placeholder='연락처')
+            .form-group
+              input.form-control.form-control-lg(type='email', placeholder='이메일')
+            .form-group
+              textarea.form-control.form-control-lg(rows='10', placeholder='연락처')
+            .text-right
+              button.btn.btn-secondary(type='button') 확인
+  section(id='location')
+    .content-container
+      h2.mb-3 찾아오시는 길
+      p.mb-5
+        | 서울시 강남구 테헤란로 114길 38 동일타워 13층 티포트
+        br
+        | 13FL, Dong-il tower, 1004 Dae-Chi-Dong, Gangnamgu, Seoul, South Korea T PORT Inc
+        br
+        | Tel. 02-2138-8050
+        br        
+      #map
+        script.
+          function initMap() {
+            var myLatLng = {lat: 37.507033, lng: 127.067124};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 16,
+              center: myLatLng
+            });
+            var image = '/images/marker.png';
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,              
+              icon: image
+            });
+          }
+        script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAYAR9ha33tDQfl81KCVoePD_w3KcAaWGo&callback=initMap')
+
+include footer.pug
